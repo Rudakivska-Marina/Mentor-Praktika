@@ -1,0 +1,300 @@
+/* body */
+:root {
+    --black: #111;
+    --violet: #1E1823;
+    --gray: #4C4C4C;
+    --orange: #FD9222;
+    --beige: #FCF1E0;
+    --light: #FAFAFA;
+    --white: #FFF;
+}
+
+/* Base */
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1168px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+/* header */
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: inline-flex;
+    color: #111;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    margin-right: 365px;
+}
+
+.logo-span {
+    font-style: italic;
+}
+
+.nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    gap: 24px;
+    margin-right: 90px;
+}
+
+.nav-link {
+    display: block;
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    padding: 32px 0px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #fd9222;
+}
+
+.list-icon {
+    display: flex;
+    gap: 14px;
+}
+
+.link-icon {
+    display: block;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+    height: 600px;
+    padding: 381px 40px 40px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(17, 17, 17, 0.7);
+    margin: 0px 32px 80px 32px;
+    
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    max-width: 487px;
+    padding-bottom: 32px;
+}
+
+.hero-list {
+    display: inline-flex;
+    gap: 14px;
+}
+
+.hero-btn-buy {
+    border-radius: 100px;
+    background-color: var(--orange, #fd9222);
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    padding: 14px 40px 14px 40px;
+    border: none;
+}
+
+.hero-btn-buy:hover,
+.hero-btn-buy:focus {
+    background-color: #fcf1e0;
+    color: #fd9222;
+}
+
+.hero-btn-hov {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    padding: 14px 40px 14px 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 585px;
+    
+}
+
+.hero-btn-hov:hover,
+.hero-btn-hov:focus {
+    border: 1px solid #fd9222;
+    color: #fd9222;
+}
+
+.hero-btn-scr {
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    align-items: center;
+    gap: 14px;
+}
+
+.hero-btn-scr-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.hero-btn-scr:hover,
+.hero-btn-scr:focus {
+    color: #fd9222;
+}
+
+/* Benefits */
+
+.benefits {
+    background-color: #1e1823;
+    padding: 50px 0;
+}
+
+.benefits-title {
+    color: #1e1823;
+}
+
+.benefits-list {
+    display: flex;
+    gap: 88px;
+    margin: 0 18px;
+    justify-content: center;
+}
+
+.benefits-list-item {
+    width: calc((100% - 176px) / 3);
+}
+
+.benefits-list-item-title {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.22;
+    margin-bottom: 18px;
+}
+
+.benefits-list-item-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+/* ingredients */
+
+.ingredients-h {
+    color: var(--black, #111);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 1.16;
+    text-transform: uppercase;
+    width: 412px;
+}
+
+.ingredients-h-taste {
+    color: var(--orange, #FD9222);
+}
+
+.ingredients-ul {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.ingredients-list {
+    padding: 28px;
+    color: var(--black, #fff);
+    border: 1px solid transparent;
+    width: calc((100% - 32px * 3) / 4);
+    border-radius: 15px;
+    background: #FD9222;
+}
+
+.ingredients-name {
+    font-weight: 600;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
